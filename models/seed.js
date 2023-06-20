@@ -1,6 +1,6 @@
-const Pokemon = require("./pokemon.js")
+const Pokemon = require("./pokemon")
 const mongoose = require("./connection")
-const Pokemons = require("./seedData")
+const pokemons = require("./seedData")
 
 async function seed(){
     await Pokemon.deleteMany({})

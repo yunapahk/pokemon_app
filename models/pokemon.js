@@ -45,8 +45,7 @@ const pokemonSchema = new Schema({
       dragon: "1",
       dark: "1",
       steel: "1"
-    }
-  }
+    }}
   });
 
 const Pokemon = model("Pokemon", pokemonSchema)

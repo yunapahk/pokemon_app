@@ -1,7 +1,7 @@
 require("dotenv").config()
-const express = require('express');
+const express = require("express");
 const middleware = require("./utils/middleware")
-const registerContollers = require("./utils/registercontrollers")
+const registerControllers = require("./utils/registercontrollers")
 
 
 // REGISTER APPLICATION OBJECT //
@@ -13,7 +13,7 @@ middleware(app)
 
 
 // REGISTER ROUTES/CONTROLLERS //
-registerContollers(app)
+registerControllers(app)
 
 
 // LISTENER //

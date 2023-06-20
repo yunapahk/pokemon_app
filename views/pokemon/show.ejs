@@ -6,7 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1><%= pokemon.name %></h1>
-    <h2></h2>
+    <h1>Pokemons<br><%= pokemon.name %></h1>
+    <div class="buttons">
+        <a href="/pokemon/new"><button>Add</button></a>
+        <a href="/pokemon"><button>Back</button></a>
+        <a href="/pokemon/<%= pokemon._id %>/edit"><button>Edit<%= pokemon.name %></button></a>
+    </div>
+    <a href="/pokemon/<%= pokemon._id %>">
+    <h2><%= pokemon.name %></h2></a>
+
 </body>
 </html>

@@ -1,5 +1,5 @@
 const Router = require("express").Router
-const controller = require("..pokemon/controllers/pokemon")
+const controller = require("../controllers/pokemon")
 
 const router = Router()
 

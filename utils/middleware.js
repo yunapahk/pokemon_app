@@ -1,6 +1,6 @@
-const express = require("express")
 const morgan = require("morgan")
 const methodOverride = require("method-override")
+const express = require("express")
 
 function middleware(app){
 
