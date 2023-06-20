@@ -1,25 +1,22 @@
-const express    = require('express');
-const app        = express();
-const Pokemon    = require('../models/pokemon.js');
-
-app.get('/data', (req, res) => {
-    const data = {name: Yuna}
-    res.json(data);
-});
+require("dotenv").config()
+const express = require('express');
+const middleware = require("./utils/middleware")
+const registerContollers = require("./utils/registercontrollers")
 
 
-// INDEX
-app.get('/', (req, res) => {
-res.render('index.ejs', { data: Pokemon });
-});
+// REGISTER APPLICATION OBJECT //
+const app = express();
 
 
-// SHOW
-app.get('/:id', (req, res) => {
-res.render('show.ejs', { data: Pokemon[req.params.id] });
-});
+// REGISTER MIDDLEWARE //
+middleware(app)
 
-// LISTENER
-app.listen(PORT, () => {
-    console.log(`LISTENING ON PORT` ${PORT})
+
+// REGISTER ROUTES/CONTROLLERS //
+registerContollers(app)
+
+
+// LISTENER //
+app.listen(process.env.PORT, () => {
+    console.log("Listening on port:", process.env.PORT)
 })
