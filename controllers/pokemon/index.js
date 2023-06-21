@@ -12,3 +12,4 @@ module.exports = {
     destroy
 };
 
+module.exports = router
