@@ -50,6 +50,4 @@ const pokemonSchema = new Schema({
 
 const Pokemon = model("Pokemon", pokemonSchema)
 
-console.log(Pokemon)
-
 module.exports = Pokemon

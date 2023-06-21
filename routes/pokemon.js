@@ -6,24 +6,24 @@ const router = Router()
             // ROUTES //
 
 // INDEX //
-router.get("/", controllers.index)
+router.get("/", controller.index)
 
 // NEW //
-router.get("/new", controllers.new)
+router.get("/new", controller.new)
 
 // DESTROY //
-router.delete("/:id", controllers.destroy)
+router.delete("/:id", controller.destroy)
 
 // UPDATE //
-router.put("/:id", controllers.update)
+router.put("/:id", controller.update)
 
 // CREATE //
-router.post("/", controllers.create)
+router.post("/", controller.create)
 
 //  EDIT //
-router.get("/:id/edit", controllers.edit)
+router.get("/:id/edit", controller.edit)
 
 // SHOW //
-router.get("/:id", controllers.show)
+router.get("/:id", controller.show)
 
 module.exports = router

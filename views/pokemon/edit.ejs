@@ -8,7 +8,19 @@
 </head>
 <body>
     <h1>Edit Pokemon</h1>
-    <form action="/pokemon/<%= pokemon._id %>?_method=put" method="post"></form>
+    <form action="/pokemon/<%= pokemon._id %>?_method=put" method="post">
+        <input type="text" name="name" placeholder="Name of Pokemon" value="<%= pokemon.name %>"/>
+        <input type="text" name="type" placeholder="Type of Pokemon" value="<%= pokemon.type %>"/>
+        <input type="submit" value="Add New Pokemon"/>
+    </form>
     
+    <li>
+        <input type="number" name="hp" placeholder="Amount of HP" value="<%= pokemon.stats.hp %>"/>
+        <input type="number" name="attack" placeholder="Amount of Attack" value="<%= pokemon.stats.attack %>"/>
+        <input type="number" name="defense" placeholder="Amount of Defense" value="<%= pokemon.stats.defense %>"/>
+        <input type="number" name="spattack" placeholder="Amount of SPAttack" value="<%= pokemon.stats.spattack %>"/>
+        <input type="number" name="spdefense" placeholder="Amount of SPDefense" value="<%= pokemon.stats.spdefense %>"/>
+        <input type="number" name="speed" placeholder="Speed of Pokemon" value="<%= pokemon.stats.speed %>"/>
+    </li>
     </body>
     </html>

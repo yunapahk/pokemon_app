@@ -1,6 +1,10 @@
 const index = require("./indexRoute");
 const newPokemon = require("./new");
-const show = require("./show")
+const show = require("./show");
+const create = require("./create");
+const edit = require("./edit");
+const update = require("./update");
+const destroy = require("./delete");
 
 module.exports = {
     index, 
@@ -12,4 +16,3 @@ module.exports = {
     destroy
 };
 
-module.exports = router
