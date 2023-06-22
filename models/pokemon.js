@@ -2,11 +2,19 @@ const mongoose = require("./connection")
 
 const {Schema, model} = mongoose
 
-const pokemonSchema = new Schema({
+const pokemonSchema = new Schema ({
     name: String,
     img: String,
     type: [String],
-    stats: Object,
+    stats: {
+      hp: String,
+      attack: String,
+      defense: String,
+      spattack: String,
+      spdefendse: String,
+      speed: String,
+    },
+
     damages: {
       type: {
         normal: String,

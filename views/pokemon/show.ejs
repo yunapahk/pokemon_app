@@ -4,16 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .banner {
+            background-color: aqua;
+            color: black;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        
+        .button-container button {
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        .delete-form {
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        h1 {
+            padding-top: 20px;
+            font-size: 60px;
+            padding-left: 15px;
+            padding-bottom: 2px;
+        }
+
+        .name {
+            font-size: 30px;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
+    <div class="banner">
+        <h1>Pokedex</h1>
+    </div>
 
-    <h1><%= pokemon.name %></h1>
+    <div class="name">
+    <p><%= pokemon.name %></p>
+    </div>
+
     <div class="img"><img src="<% pokemon.img %>">
-    <a href="/pokemon"><button>Go Back to Main<%= pokemon._id %>"></button></a>
-    <a href="/pokemon/<%= pokemon._id %>/edit"><button>EDIT</button></a>
-    <form action="pokemon/<%= pokemon._id %>?_method=delete" method="post">
-        <input type="submit" value="DELETE">
-    </form>
     
     <h3>Type: <%= pokemon.type %></h3>
     <li>
@@ -47,5 +88,15 @@
         <p>Steel: <%= pokemon.damages.steel %></p>
     </li>
 
+    <div class="button-container">
+        <a href="/pokemon"><button>Back</button></a>
+        <a href="/pokemon/<%= pokemon._id %>/edit"><button>EDIT</button></a>
+    </div>
+
+    <div class="del-button">
+    <form class="delete-button" action="pokemon/<%= pokemon._id %>?_method=delete" method="post">
+        <input type="submit" value="DELETE">
+    </form>
+     </div>
 </body>
 </html>

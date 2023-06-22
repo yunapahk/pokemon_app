@@ -1,4 +1,3 @@
- 
  const pokemons = [
     {
       id: "001",
