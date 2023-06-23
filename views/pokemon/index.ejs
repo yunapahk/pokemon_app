@@ -3,20 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cache Them All</title>
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+        }
+
+        h1 {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .create-button {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+
+        .container {
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           justify-items: center;
+           align-items: center;
+        }
+    </style>
 </head>
 <body>
-   
-    <a href="pokemon/new"><button>Create New Pokemon</button></a>
+    <h1>Cache Them All!</h1> 
 
-    <h1>List of Pokemons</h1>
-        <ul>
-            <% pokemons.forEach((pokemon, index) => { %>
-                <li>
-                    <a href="/pokemon/<%= pokemon._id %>"><h2><%=pokemon.name %></h2></a>
-                    <img src="<%= pokemon.img %>">
-                </li>
-            <% }) %>
-        </ul>
+    <div class="create-button">
+        <a href="pokemon/new"><button>Create New Pokemon</button></a>
+    </div>
+    
+        <% pokemons.forEach((pokemon, index) => { %>
+    <div class="container">
+        <a href="/pokemon/<%= pokemon._id %>"><h2><%=pokemon.name %></h2></a>
+        <img src="<%= pokemon.img %>">
+        <% }) %>
+    </div>
 </body>
 </html>

@@ -11,7 +11,7 @@ const pokemonSchema = new Schema ({
       attack: String,
       defense: String,
       spattack: String,
-      spdefendse: String,
+      spdefense: String,
       speed: String,
     },
 
