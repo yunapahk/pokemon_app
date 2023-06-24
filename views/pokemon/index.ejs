@@ -13,11 +13,12 @@
         <a href="pokemon/new"><button>Create New Pokemon</button></a>
     </div>
     
+    <div class="index-container">
         <% pokemons.forEach((pokemon, index) => { %>
-    <div class="container">
         <a href="/pokemon/<%= pokemon._id %>"><h2><%=pokemon.name %></h2></a>
         <img src="<%= pokemon.img %>">
         <% }) %>
     </div>
+</div>
 </body>
 </html>

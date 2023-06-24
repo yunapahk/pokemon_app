@@ -1,28 +1,75 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-body {
-    display: block;
-    text-align: center;
-    justify-content: center;
-    background-color: aquamarine;
-}
+    body {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        background-color: rgb(66, 195, 107);
+    }
 
-h1 {
-    padding-top: 30px;
-    text-align: center;
-}
+    h1 {
+        padding-top: 20px;
+        text-align: center;
+    }
 
-.create-button {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 40px;
-}
+    .create-button {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-}
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .banner {
+        background-color: rgb(61, 116, 78);
+        color: black;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .button-container button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .delete-form {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        padding-top: 0px;
+        font-size: 60px;
+        padding-left: 15px;
+        padding-bottom: 2px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .name {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .column {
+        text-align: center;
+    }
