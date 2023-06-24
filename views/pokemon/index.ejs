@@ -14,14 +14,16 @@
     </div>
     
     <div class="index-container">
-        <% pokemons.forEach((pokemon, index) => { %>
-
-    <div class-index-pokemon>
-        <a href="/pokemon/<%= pokemon._id %>"><h2><%=pokemon.name %></h2></a>
-        <img src="<%= pokemon.img %>">
-        <% }) %>
+            <% pokemons.forEach((pokemon, index) => { %>
     </div>
+    
+    <div class="index-pokemon">
+        <a href="/pokemon/<%= pokemon._id %>"><h2 class="index-name"><%=pokemon.name %></h2></a>
+        <img class="index-image" src="<%= pokemon.img %>">
+        <% }) %> 
+        </div>
     </div>
+    
 </div>
 </body>
 </html>
