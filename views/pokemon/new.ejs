@@ -9,18 +9,21 @@
 </head>
 <body>
     <h1>Create a New Pokemon</h1>
-    <form action="/pokemon" method="POST">
-        <input type="text" name="name" placeholder="Name of Pokemon"/>
-        <input type="img" name="type" placeholder="Type of Pokemon"/>
-        <input type="number" name="hp" placeholder="hp"/>
-        <input type="number" name="attack" placeholder="Attack"/>
-        <input type="number" name="defense" placeholder="Defense"/>
-        <input type="number" name="spattack" placeholder="spAttack"/>
-        <input type="number" name="spdefense" placeholder="spDefense"/>
-        <input type="number" name="speed" placeholder="Speed"/>
-        <input type="submit" value="Create Pokemon"/>
-    </form>
 
+    <div class="new-inputs">
+        <form action="/pokemon" method="POST">
+            <input type="text" name="name" placeholder="Name of Pokemon"/>
+            <input type="text" name="type" placeholder="Image"/>
+            <input type="text" name="type" placeholder="Type of Pokemon"/>
+            <input type="number" name="hp" placeholder="hp"/>
+            <input type="number" name="attack" placeholder="Attack"/>
+            <input type="number" name="defense" placeholder="Defense"/>
+            <input type="number" name="spattack" placeholder="spAttack"/>
+            <input type="number" name="spdefense" placeholder="spDefense"/>
+            <input type="number" name="speed" placeholder="Speed"/>
+            <input type="submit" value="Create Pokemon" class="create-button"/>
+        </form>
+    </div>
     
     
 </body>

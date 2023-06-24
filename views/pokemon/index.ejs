@@ -15,9 +15,12 @@
     
     <div class="index-container">
         <% pokemons.forEach((pokemon, index) => { %>
+
+    <div class-index-pokemon>
         <a href="/pokemon/<%= pokemon._id %>"><h2><%=pokemon.name %></h2></a>
         <img src="<%= pokemon.img %>">
         <% }) %>
+    </div>
     </div>
 </div>
 </body>
